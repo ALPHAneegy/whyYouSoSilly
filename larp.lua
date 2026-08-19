@@ -16,6 +16,7 @@ local b = Instance.new("ScreenGui")
 local c = Instance.new("Frame")
 local d = Instance.new("TextLabel")
 local e = Instance.new("ImageLabel")
+local Window = Instance.new("ImageLabel")
 local f = Instance.new("Frame")
 local g = Instance.new("Frame")
 local h = Instance.new("ImageButton")
@@ -106,7 +107,22 @@ d.TextColor3 = Color3.new(1, 1, 1)
 d.TextSize = 16
 d.TextXAlignment = Enum.TextXAlignment.Left
 
-e.Name = "Window"
+Window.Name = "Window"
+Window.Parent = Prefabs
+Window.Active = true
+Window.BackgroundColor3 = Color3.new(0, 0, 0)
+Window.BackgroundTransparency = 0.01
+Window.ClipsDescendants = true
+Window.Position = UDim2.new(0, 20, 0, 20)
+Window.Selectable = true
+Window.Size = UDim2.new(0, 0, 490, 490)
+Window.Image = "rbxassetid://10204699284"
+Window.ImageColor3 = Color3.new(1.2, 1.2, 1.2)
+Window.ImageTransparency = 0.05
+Window.BackgroundTransparency = 0.01
+
+
+e.Name = "Windows"
 e.Parent = c
 e.Active = true
 e.BackgroundColor3 = Color3.new(1, 1, 1)
